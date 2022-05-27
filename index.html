@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>complete responsive fitness and gym website design</title>
+    <title>KICKIN</title>
 
     <!-- font awesome cdn link  -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
@@ -385,7 +385,7 @@
                     <div class="link"> <a href="#">By User</a> <span>|</span> <a href="#">21st may, 2021</a> </div>
                     <h3>Fitness is not about being better than someone else</h3>
                     <p>Discover how Life Fitness transforms facilities to create memorable experiences for your exercisers.</p>
-                    <a href="#" class="btn">read more</a>
+                    <a href="#" class="btn">Read More</a>
                 </div>
             </div>
             
@@ -397,7 +397,7 @@
                     <div class="link"> <a href="#">By User</a> <span>|</span> <a href="#">21st may, 2021</a> </div>
                     <h3>Fitness is not about being better than someone else</h3>
                     <p>Discover how Life Fitness transforms facilities to create memorable experiences for your exercisers.</p>
-                    <a href="#" class="btn">read more</a>
+                    <a href="#" class="btn">Read More</a>
                 </div>
             </div>
 
@@ -409,7 +409,7 @@
                     <div class="link"> <a href="#">By User</a> <span>|</span> <a href="#">21st may, 2021</a> </div>
                     <h3>Fitness is not about being better than someone else</h3>
                     <p>Discover how Life Fitness transforms facilities to create memorable experiences for your exercisers.</p>
-                    <a href="#" class="btn">read more</a>
+                    <a href="#" class="btn">Read More</a>
                 </div>
             </div>
 
@@ -421,7 +421,7 @@
                     <div class="link"> <a href="#">By User</a> <span>|</span> <a href="#">21st may, 2021</a> </div>
                     <h3>Fitness is not about being better than someone else</h3>
                     <p>Discover how Life Fitness transforms facilities to create memorable experiences for your exercisers.</p>
-                    <a href="#" class="btn">read more</a>
+                    <a href="#" class="btn">Read More</a>
                 </div>
             </div>
 
@@ -432,8 +432,8 @@
                 <div class="content">
                     <div class="link"> <a href="#">By User</a> <span>|</span> <a href="#">21st may, 2021</a> </div>
                     <h3>fitness is not about being better than someone else</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquam, tenetur?</p>
-                    <a href="#" class="btn">read more</a>
+                    <p>Discover how Life Fitness transforms facilities to create memorable experiences for your exercisers.</p>
+                    <a href="#" class="btn">Read More</a>
                 </div>
             </div>
 
@@ -490,7 +490,7 @@
             <h3>Newsletter</h3>
             <p>Subscribe For Latest Updates</p>
             <form action="">
-                <input type="email" name="" class="email" placeholder="enter your email" id="register">
+                <input type="text" name="" class="email" placeholder="enter your name" id="register">
                 <input type="submit" value="subscribe" id="submitBtn" class="btn">
             </form>
         </div>
@@ -541,15 +541,15 @@
     const database = getDatabase();
 
 
-    var email = document.getElementById("register");
+    var name = document.getElementById("register");
     var submitBtn = document.getElementById("submitBtn");
 
     function insertData(){
-        set(ref(database,"Registered Emails" + "/" + email.value),{
-            Email: email.value
+        set(ref(database,"Registered Names" + "/" + name.value),{
+            Names: name.value
         })
         .then(() => {
-            alert("Email Registered");
+            alert("Name Registered");
         })
         .catch((error) => {
             alert("Error" + error);
